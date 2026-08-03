@@ -12,7 +12,7 @@
 
 ## Overview
 
-South Australia operates the most renewable-penetrated grid in the National Electricity Market, with renewable share peaking above 80% on individual months and the state targeting 100% net renewable by 2027. This analysis examines how that transition has reshaped the economics of generation across five technologies — **diesel, natural gas, wind, solar, and battery storage** — with a specific focus on the dispatch-weighted prices each technology actually captures.
+South Australia operates the most renewable-penetrated grid in the National Electricity Market, with renewable share peaking above 80% on individual months and the state targeting 100% net renewable by 2027. This analysis examines how that transition has reshaped the economics of generation across five technologies: **diesel, natural gas, wind, solar, and battery storage** with a specific focus on the dispatch-weighted prices each technology actually captures.
 
 The analysis is built around a single underlying question:
 
@@ -26,7 +26,7 @@ The dataset comprises 5-minute resolution spot prices and dispatch volumes for *
 
 **1. Capture prices span 17× across SA technologies.** Median dispatch-weighted prices range from ~$25/MWh (solar) to ~$430/MWh (diesel), making technology selection the dominant revenue driver in the SA market.
 
-**2. The dispatchable premium is widening, not narrowing.** Gas and battery capture factors have roughly doubled over the two-year period — gas from ~1.7× to ~4.9× the time-weighted price; battery storage from ~2.7× to peaks of ~5.3×. This contradicts the assumption that flexible thermal economics decline with renewable penetration.
+**2. The dispatchable premium is widening, not narrowing.** Gas and battery capture factors have roughly doubled over the two-year period. This contradicts the assumption that flexible thermal economics decline with renewable penetration.
 
 **3. Solar capture factor is on a measurable downward trend** (–0.026/year), confirming structural cannibalisation. Compounded over a 15-year project life, this implies roughly 40 percentage points of additional capture price erosion.
 
