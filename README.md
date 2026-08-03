@@ -1,7 +1,7 @@
 # sa-electricity-market-investment-thesis
 # SA Capture Price Analysis
 
-> Quantitative analysis of capture prices, revenue dynamics, and risk-adjusted returns across 15 South Australian generators (Jul 2022 – Jun 2024) — investment thesis for a renewable energy developer acquisition in the Australian National Electricity Market.
+> Quantitative analysis of capture prices, revenue dynamics, and risk-adjusted returns across 15 South Australian generators (Jul 2022 – Jun 2024), investment thesis for a renewable energy developer acquisition in the Australian National Electricity Market.
 
 ![Period](https://img.shields.io/badge/Period-Jul%202022%20–%20Jun%202024-5C2D91)
 ![Region](https://img.shields.io/badge/Region-SA1%20(NEM)-5C2D91)
