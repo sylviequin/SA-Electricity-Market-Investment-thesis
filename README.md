@@ -128,8 +128,11 @@ The analysis is intended to demonstrate quantitative analytical capability in th
 ### Author
 
 **Quynh Huong Nguyen (Sylvie)**
+
 Macquarie Business School
-[LinkedIn](https://www.linkedin.com/in/sylvia-quin/) · [Email](huongquynh04.vn@gmail.com)
+
+[LinkedIn](https://www.linkedin.com/in/sylvia-quin/) · 📧 [Email](huongquynh04.vn@gmail.com)
+
 
 ### Acknowledgements
 
