@@ -121,8 +121,6 @@ This analysis has several limitations that should inform any forward use of the 
 
 ## About
 
-This project was prepared as part of the **BUSA8031 Business Analytics Project** at Macquarie Business School, supervised by Professor Stefan Trueck. It applies the analytical conventions of energy finance consulting and the visual conventions of the AEMO Quarterly Energy Dynamics report series.
-
 The analysis is intended to demonstrate quantitative analytical capability in the energy finance domain. It is not investment advice.
 
 ### Author
