@@ -14,7 +14,11 @@
 
 South Australia operates the most renewable-penetrated grid in the National Electricity Market, with renewable share peaking above 80% on individual months and the state targeting 100% net renewable by 2027. This analysis examines how that transition has reshaped the economics of generation across five technologies: **diesel, natural gas, wind, solar, and battery storage** with a specific focus on the dispatch-weighted prices each technology actually captures.
 
-The analysis is built around a single underlying question:
+## Business question
+
+South Australia runs on renewable energy more than almost anywhere else in the world, especially wind and solar covering over 100% of the state's electricity demand. But it's turned out that generating green electricity and actually making money from it are two very different things. When every solar farm switches on at noon and every wind turbine spins up overnight, prices don't rise to meet them, they collapse as a result. The market is flooded, and the very abundance that makes South Australia a renewable success story is the same force quietly squeezing generator revenues.
+
+Therefore, the analysis is built around a single underlying question:
 
 > *Where should new capital be deployed in the SA generation market, and which technologies offer the strongest risk-adjusted returns over a 10–15 year investment horizon?*
 
