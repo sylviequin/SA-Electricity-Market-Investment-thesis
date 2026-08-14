@@ -1,0 +1,217 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif}
+.ig{background:#0a1628;color:#fff;width:100%;padding:0;font-family:'DM Sans',sans-serif}
+.header{background:linear-gradient(135deg,#0d2145 0%,#102a55 60%,#1a3a6e 100%);padding:28px 32px 24px;display:flex;align-items:flex-start;gap:24px;border-bottom:3px solid #f5a623}
+.logo-block{flex-shrink:0}
+.logo-circle{width:48px;height:48px;border-radius:50%;background:#f5a623;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#0a1628;letter-spacing:.5px}
+.header-text{flex:1}
+.badge{display:inline-block;background:#f5a623;color:#0a1628;font-size:10px;font-weight:600;padding:3px 10px;border-radius:3px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-family:'DM Serif Display',serif;font-size:26px;font-weight:400;color:#fff;line-height:1.2;margin-bottom:4px}
+.header-sub{font-size:12px;color:#8ba8cc;margin-top:4px;line-height:1.5}
+.thesis-bar{background:#f5a623;padding:14px 32px;display:flex;align-items:center;gap:16px}
+.thesis-label{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#0a1628;flex-shrink:0;white-space:nowrap}
+.thesis-text{font-size:12px;font-weight:500;color:#0a1628;line-height:1.4}
+.thesis-text strong{font-weight:700}
+.main-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;padding:0}
+.section{padding:20px 24px;border-right:1px solid rgba(255,255,255,.08)}
+.section:last-child{border-right:none}
+.sec-label{font-size:9px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#f5a623;margin-bottom:10px}
+.sec-title{font-size:14px;font-weight:500;color:#fff;margin-bottom:14px;line-height:1.3}
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.kpi{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:10px 12px}
+.kpi-val{font-size:20px;font-weight:600;color:#f5a623;line-height:1}
+.kpi-label{font-size:10px;color:#8ba8cc;margin-top:3px;line-height:1.3}
+.kpi-accent{color:#4dd9ac}
+.kpi-warn{color:#e87070}
+.divider{height:1px;background:rgba(255,255,255,.08);margin:14px 0}
+.tech-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.tech-name{font-size:11px;color:#8ba8cc;width:68px;flex-shrink:0}
+.tech-bar-wrap{flex:1;background:rgba(255,255,255,.07);border-radius:3px;height:14px;position:relative;overflow:hidden}
+.tech-bar{height:100%;border-radius:3px;transition:width .3s}
+.tech-val{font-size:10px;font-weight:500;color:#fff;margin-left:6px;min-width:36px;text-align:right;flex-shrink:0}
+.bar-diesel{background:#e87070}
+.bar-battery{background:#4dd9ac}
+.bar-gas{background:#4ea8e8}
+.bar-wind{background:#a0d468}
+.bar-solar{background:#f5a623;opacity:.6}
+.insight-box{background:rgba(77,217,172,.08);border:1px solid rgba(77,217,172,.25);border-radius:6px;padding:10px 12px;margin-top:12px}
+.insight-label{font-size:9px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#4dd9ac;margin-bottom:4px}
+.insight-text{font-size:11px;color:#c8dff2;line-height:1.4}
+.warn-box{background:rgba(232,112,112,.08);border:1px solid rgba(232,112,112,.25);border-radius:6px;padding:10px 12px;margin-top:8px}
+.warn-label{font-size:9px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#e87070;margin-bottom:4px}
+.warn-text{font-size:11px;color:#c8dff2;line-height:1.4}
+.chart-wrap{position:relative;width:100%;margin:0 0 12px}
+.scatter-svg{width:100%;height:180px}
+.rec-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
+.rec-card{border-radius:6px;padding:10px 12px;position:relative}
+.rec-buy{background:rgba(77,217,172,.1);border:1px solid rgba(77,217,172,.3)}
+.rec-scale{background:rgba(78,168,232,.1);border:1px solid rgba(78,168,232,.3)}
+.rec-avoid{background:rgba(232,112,112,.1);border:1px solid rgba(232,112,112,.3)}
+.rec-tact{background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.3)}
+.rec-pill{font-size:8px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:2px 7px;border-radius:3px;display:inline-block;margin-bottom:5px}
+.pill-buy{background:#4dd9ac;color:#0a1628}
+.pill-scale{background:#4ea8e8;color:#0a1628}
+.pill-avoid{background:#e87070;color:#fff}
+.pill-tact{background:#f5a623;color:#0a1628}
+.rec-title{font-size:11px;font-weight:600;color:#fff;margin-bottom:3px;line-height:1.3}
+.rec-desc{font-size:10px;color:#8ba8cc;line-height:1.4}
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.08)}
+.bottom-sec{padding:18px 24px;border-right:1px solid rgba(255,255,255,.08)}
+.bottom-sec:last-child{border-right:none}
+.risk-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px}
+.risk-dot{width:6px;height:6px;border-radius:50%;background:#e87070;flex-shrink:0;margin-top:4px}
+.risk-text{font-size:10px;color:#8ba8cc;line-height:1.4}
+.risk-text strong{color:#c8dff2;font-weight:500}
+.footer{background:#060e1c;padding:10px 32px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.06)}
+.footer-text{font-size:9px;color:#3d5a80;letter-spacing:.3px}
+.ev-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.ev-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.ev-label{font-size:10px;color:#8ba8cc;flex:1;line-height:1.3}
+.ev-val{font-size:11px;font-weight:600;color:#fff;flex-shrink:0}
+.source-line{font-size:9px;color:#3d5a80;margin-top:10px;line-height:1.4}
+</style>
+
+<div class="ig">
+  <div class="header">
+    <div class="logo-block">
+      <div class="logo-circle">SA<br>NEM</div>
+    </div>
+    <div class="header-text">
+      <div class="badge">Investment Briefing · Confidential</div>
+      <h1>South Australian Electricity Market</h1>
+      <div class="header-sub">Capture Price Dynamics, Technology Economics & Portfolio Recommendation &nbsp;·&nbsp; Jul 2022 – Jun 2024<br>Energy Finance Consulting Team · Macquarie Business School BUSA8031</div>
+    </div>
+    <div style="flex-shrink:0;text-align:right">
+      <div style="font-size:9px;color:#8ba8cc;margin-bottom:4px">Analysis period</div>
+      <div style="font-size:13px;font-weight:600;color:#f5a623">2 Years</div>
+      <div style="font-size:9px;color:#3d5a80">15 generators</div>
+    </div>
+  </div>
+
+  <div class="thesis-bar">
+    <div class="thesis-label">Investment thesis</div>
+    <div class="thesis-text">SA is a <strong>structurally bifurcated market</strong> — dispatch flexibility and timing earn premium revenue while raw generation volume does not. The optimal portfolio is a <strong>60/40 wind-plus-storage hybrid</strong>, supplemented by selective solar only where firm contracts or co-located storage protect revenue.</div>
+  </div>
+
+  <div class="main-grid">
+
+    <div class="section">
+      <div class="sec-label">01 · Market context</div>
+      <div class="sec-title">Price trajectory & generation mix</div>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="kpi-val">$101</div><div class="kpi-label">2yr avg spot price /MWh</div></div>
+        <div class="kpi"><div class="kpi-val kpi-warn">$375</div><div class="kpi-label">Jul 2022 gas-shock spike</div></div>
+        <div class="kpi"><div class="kpi-val kpi-accent">56.6%</div><div class="kpi-label">2yr avg renewable share</div></div>
+        <div class="kpi"><div class="kpi-val kpi-warn">−22%</div><div class="kpi-label">Grid gen peak-to-peak decline</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="sec-label" style="margin-top:0">Spot price drivers</div>
+      <div class="ev-row"><div class="ev-dot" style="background:#e87070"></div><div class="ev-label">Jul 2022 gas shock (Russia-Ukraine)</div><div class="ev-val">$375/MWh</div></div>
+      <div class="ev-row"><div class="ev-dot" style="background:#f5a623"></div><div class="ev-label">May-Jun 2023 wind drought spike</div><div class="ev-val">$160–195</div></div>
+      <div class="ev-row"><div class="ev-dot" style="background:#4dd9ac"></div><div class="ev-label">Stable post-shock corridor</div><div class="ev-val">$60–80</div></div>
+      <div class="insight-box">
+        <div class="insight-label">Investor takeaway</div>
+        <div class="insight-text">When renewables fail, dispatchable assets capture concentrated revenue. A renewable-only portfolio is structurally short scarcity premium.</div>
+      </div>
+      <div class="source-line">SA system security direction costs rose from $7.4M (Q2 2022) to $21.7M (Q2 2023). Rooftop PV displaced 22% of grid demand peak-to-peak.</div>
+    </div>
+
+    <div class="section">
+      <div class="sec-label">02 · Technology economics</div>
+      <div class="sec-title">Capture price hierarchy — 17× spread across technologies</div>
+      <div class="tech-row"><div class="tech-name">Diesel</div><div class="tech-bar-wrap"><div class="tech-bar bar-diesel" style="width:100%"></div></div><div class="tech-val">~$430</div></div>
+      <div class="tech-row"><div class="tech-name">Battery</div><div class="tech-bar-wrap"><div class="tech-bar bar-battery" style="width:39%"></div></div><div class="tech-val">~$170</div></div>
+      <div class="tech-row"><div class="tech-name">Gas</div><div class="tech-bar-wrap"><div class="tech-bar bar-gas" style="width:39%"></div></div><div class="tech-val">~$170</div></div>
+      <div class="tech-row"><div class="tech-name">Wind</div><div class="tech-bar-wrap"><div class="tech-bar bar-wind" style="width:16%"></div></div><div class="tech-val">~$70</div></div>
+      <div class="tech-row"><div class="tech-name">Solar</div><div class="tech-bar-wrap"><div class="tech-bar bar-solar" style="width:6%"></div></div><div class="tech-val">~$25</div></div>
+      <div style="font-size:9px;color:#3d5a80;margin-top:4px;margin-bottom:12px">Fleet DWP reference: $173/MWh · Dispatch-Weighted Price (DWP), Jul 2022–Jun 2024</div>
+      <div class="divider"></div>
+      <div class="sec-label" style="margin-top:0">Capture factor trend (rolling 90-day)</div>
+      <div class="ev-row"><div class="ev-dot" style="background:#4dd9ac"></div><div class="ev-label">Battery — peaked at 5.3× TWP, now compressing</div><div class="ev-val" style="color:#4dd9ac">↓ compress</div></div>
+      <div class="ev-row"><div class="ev-dot" style="background:#4ea8e8"></div><div class="ev-label">Gas — surged from 1.7× to 4.9× TWP</div><div class="ev-val" style="color:#4ea8e8">↑ widening</div></div>
+      <div class="ev-row"><div class="ev-dot" style="background:#a0d468"></div><div class="ev-label">Wind — positive trend +0.106/yr, rising above 1.0×</div><div class="ev-val" style="color:#a0d468">↑ +0.11</div></div>
+      <div class="ev-row"><div class="ev-dot" style="background:#f5a623;opacity:.6"></div><div class="ev-label">Solar — structural decline −0.026/yr (cannibalisation)</div><div class="ev-val" style="color:#e87070">↓ −0.026</div></div>
+      <div class="warn-box">
+        <div class="warn-label">Solar cannibalisation</div>
+        <div class="warn-text">SA prices average ~$0/MWh 11:00–14:00, peak at ~$240/MWh at 18:00 — solar dispatches at exactly the wrong time. No operational fix within the technology itself.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sec-label">03 · Risk-return synthesis</div>
+      <div class="sec-title">Efficient frontier & portfolio recommendation</div>
+      <svg class="scatter-svg" viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrowX" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="rgba(255,255,255,.2)"/></marker>
+          <marker id="arrowY" markerWidth="5" markerHeight="5" refX="2.5" refY="0" orient="auto"><path d="M0,5 L2.5,0 L5,5 Z" fill="rgba(255,255,255,.2)"/></marker>
+        </defs>
+        <line x1="30" y1="150" x2="270" y2="150" stroke="rgba(255,255,255,.15)" stroke-width="0.5" marker-end="url(#arrowX)"/>
+        <line x1="30" y1="150" x2="30" y2="10" stroke="rgba(255,255,255,.15)" stroke-width="0.5" marker-end="url(#arrowY)"/>
+        <text x="150" y="175" fill="#3d5a80" font-size="9" text-anchor="middle">Revenue volatility (CV) →</text>
+        <text x="10" y="90" fill="#3d5a80" font-size="9" text-anchor="middle" transform="rotate(-90,10,90)">Revenue /MW/mo →</text>
+        <line x1="30" y1="95" x2="270" y2="95" stroke="rgba(255,255,255,.05)" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <line x1="130" y1="10" x2="130" y2="150" stroke="rgba(255,255,255,.05)" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <circle cx="65" cy="72" r="12" fill="rgba(77,217,172,.25)" stroke="#4dd9ac" stroke-width="1.5"/>
+        <text x="65" y="76" fill="#4dd9ac" font-size="8" text-anchor="middle" font-weight="600">BESS</text>
+        <circle cx="80" cy="82" r="9" fill="rgba(160,212,104,.2)" stroke="#a0d468" stroke-width="1.5"/>
+        <text x="80" y="86" fill="#a0d468" font-size="7" text-anchor="middle">Wind</text>
+        <circle cx="160" cy="52" r="7" fill="rgba(78,168,232,.2)" stroke="#4ea8e8" stroke-width="1.5"/>
+        <text x="160" y="56" fill="#4ea8e8" font-size="7" text-anchor="middle">Gas</text>
+        <circle cx="215" cy="108" r="5" fill="rgba(232,112,112,.2)" stroke="#e87070" stroke-width="1.5"/>
+        <text x="215" y="112" fill="#e87070" font-size="7" text-anchor="middle">Solar</text>
+        <circle cx="240" cy="95" r="4" fill="rgba(120,80,80,.25)" stroke="#a06060" stroke-width="1"/>
+        <text x="240" y="90" fill="#a06060" font-size="7" text-anchor="middle">Diesel</text>
+        <polygon points="72,68 78,78 66,78" fill="#f5a623" stroke="#fff" stroke-width="1.2"/>
+        <text x="72" y="62" fill="#f5a623" font-size="8" text-anchor="middle" font-weight="700">60/40</text>
+        <text x="72" y="54" fill="#f5a623" font-size="7.5" text-anchor="middle">Hybrid★</text>
+        <path d="M55,150 Q60,100 80,75 Q95,58 120,50" stroke="#f5a623" stroke-width="1" fill="none" stroke-dasharray="3,2" opacity=".4"/>
+        <text x="115" y="46" fill="#f5a623" font-size="8" opacity=".6">Efficient frontier</text>
+      </svg>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">
+        <div class="kpi"><div class="kpi-val kpi-accent" style="font-size:14px">$18k</div><div class="kpi-label">Battery /MW/mo · CV 0.55</div></div>
+        <div class="kpi"><div class="kpi-val" style="font-size:14px;color:#a0d468">$16k</div><div class="kpi-label">Wind /MW/mo · CV 0.68</div></div>
+        <div class="kpi"><div class="kpi-val" style="font-size:14px;color:#f5a623">$17k</div><div class="kpi-label">60/40 hybrid · CV 0.55</div></div>
+      </div>
+      <div class="sec-label">Portfolio recommendations</div>
+      <div class="rec-grid">
+        <div class="rec-card rec-buy"><div class="rec-pill pill-buy">Highest conviction</div><div class="rec-title">Storage — deploy now</div><div class="rec-desc">Battery on efficient frontier. Early-mover premium is real but finite. Act within 24–36 months.</div></div>
+        <div class="rec-card rec-scale"><div class="rec-pill pill-scale">Scale play</div><div class="rec-title">Wind — deployable scale</div><div class="rec-desc">Absorbs institutional capital. Asset-level selection critical — CLEMGPWF CF of 33.8% vs peer average.</div></div>
+        <div class="rec-card rec-avoid"><div class="rec-pill pill-avoid">Avoid</div><div class="rec-title">Standalone solar</div><div class="rec-desc">Structural cannibalisation, low capture price. Only viable with PPA or co-located storage.</div></div>
+        <div class="rec-card rec-tact"><div class="rec-pill pill-tact">Tactical</div><div class="rec-title">Gas — exit-defined</div><div class="rec-desc">High absolute return, high risk. Decarbonisation exposure. Tie exit to storage build-out milestones.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-grid">
+    <div class="bottom-sec">
+      <div class="sec-label">Capacity factor benchmarks</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px">
+        <div class="kpi"><div class="kpi-val kpi-accent" style="font-size:13px">25–34%</div><div class="kpi-label">Wind CF · benchmark 28–38%</div></div>
+        <div class="kpi"><div class="kpi-val" style="font-size:13px;color:#f5a623">10–20%</div><div class="kpi-label">Solar CF · benchmark 22–28%</div></div>
+        <div class="kpi"><div class="kpi-val" style="font-size:13px;color:#4ea8e8">10–16%</div><div class="kpi-label">Gas CF · peaking/firming role</div></div>
+      </div>
+      <div class="insight-box">
+        <div class="insight-label">Critical framing</div>
+        <div class="insight-text">The challenge facing SA renewables is <strong>not operational underperformance</strong> — assets hit resource targets. The problem is purely revenue: fix via contracting and storage co-location, not technology switching.</div>
+      </div>
+      <div class="source-line" style="margin-top:8px">Battery net revenue modelled via rule-based arbitrage: charge bottom-12 daily intervals, discharge top-12, RTE = 0.85. Monthly battery revenue oscillates $8k–$42k/MW vs wind $5k–$25k and solar $0–$15k.</div>
+    </div>
+    <div class="bottom-sec">
+      <div class="sec-label">Risk register</div>
+      <div class="risk-row"><div class="risk-dot"></div><div class="risk-text"><strong>Storage saturation</strong> — faster-than-modelled battery CF compression as SA storage queue commissions 2025–2027</div></div>
+      <div class="risk-row"><div class="risk-dot"></div><div class="risk-text"><strong>Policy reversal</strong> — Federal CIS or state scheme changes reducing contracted revenue floors for new renewables</div></div>
+      <div class="risk-row"><div class="risk-dot"></div><div class="risk-text"><strong>Connection delays</strong> — transmission build and connection queue delays affecting deployment timelines and IRR</div></div>
+      <div class="risk-row"><div class="risk-dot"></div><div class="risk-text"><strong>Gas price volatility</strong> — domestic gas movements affecting peaker economics and low-VRE price formation</div></div>
+      <div class="risk-row"><div class="risk-dot"></div><div class="risk-text"><strong>Resource scarcity events</strong> — multi-month wind/solar droughts may be under-represented in the 2-year window</div></div>
+      <div class="source-line">Sources: AEMO Quarterly Energy Dynamics Q2 2023, Q3 2025 · 2025 Electricity Statement of Opportunities · AEMO Generation Information Page · SA1 5-minute dispatch data</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">Energy Finance Consulting Team · Macquarie Business School BUSA8031 · Analysis period: 1 July 2022 – 30 June 2024</div>
+    <div class="footer-text" style="color:#f5a623">CONFIDENTIAL — Not for redistribution</div>
+  </div>
+</div>
