@@ -10,11 +10,11 @@
 
 ---
 
-## Overview
+### Overview
 
 South Australia operates the most renewable-penetrated grid in the National Electricity Market, with renewable share peaking above 80% on individual months and the state targeting 100% net renewable by 2027. This analysis examines how that transition has reshaped the economics of generation across five technologies: **diesel, natural gas, wind, solar, and battery storage** with a specific focus on the dispatch-weighted prices each technology actually captures.
 
-## Case study question
+### Case study question
 
 South Australia runs on renewable energy more than almost anywhere else in the world, especially wind and solar covering over 100% of the state's electricity demand. But it's turned out that generating green electricity and actually making money from it are two very different things. When every solar farm switches on at noon and every wind turbine spins up overnight, prices don't rise to meet them, they collapse as a result. The market is flooded, and the very abundance that makes South Australia a renewable success story is the same force quietly squeezing generator revenues.
 
@@ -32,23 +32,22 @@ The dataset comprises 5-minute resolution spot prices and dispatch volumes for *
 
 ---
 
-## Key Findings
+### Key Findings
 
-**1. Capture prices span 17× across SA technologies.** Median dispatch-weighted prices range from ~$25/MWh (solar) to ~$430/MWh (diesel), making technology selection the dominant revenue driver in the SA market.
-
-**2. The dispatchable premium is widening, not narrowing.** Gas and battery capture factors have roughly doubled over the two-year period. This contradicts the assumption that flexible thermal economics decline with renewable penetration.
-
-**3. Solar capture factor is on a measurable downward trend** (–0.026/year), confirming structural cannibalisation. Compounded over a 15-year project life, this implies roughly 40 percentage points of additional capture price erosion.
-
-**4. Battery storage offers the best risk-adjusted return profile**, with mean revenue per MW competitive with gas peakers but at materially lower volatility (CV ~0.55–0.60 vs ~1.0–1.2 for gas).
-
-**5. The early-mover window for storage is finite.** Battery capture factors begin compressing at the right edge of the dataset, suggesting saturation effects as more storage capacity enters the SA system.
+| Area | Key Metric | Insight | Takeaway |
+|------|-----------|---------|----------|
+| **Capture price spread** | $25/MWh (solar) → $430/MWh (diesel): ~aprox a **17× range** | Technology selection is the single dominant revenue driver in SA, prevent any operational from improvement | Pick the wrong technology at once and no amount of execution fixes it |
+| **Hourly price mechanics** | Midday avg ~$0/MWh vs 6pm avg ~$240/MWh: a **240:1 daily swing** | Solar dispatches at peak supply and minimum price, every day, not by bad luck by its chance | No human-being fix exists within solar itself (natural resources); only co-located storage or firm contracts resolve it |
+| **Solar structural decline** | Capture factor trending at **−0.026/year** | A project capturing 60% of market average today captures only ~20% by 2040 if the trend holds | Standalone merchant solar is not investable in SA on a 14-year project horizon |
+| **Wind rising resilience** | Capture factor trending at **+0.106/year**, exceeding market average in late 2023 | Wind generates into evening and overnight windows when prices are highest, something structural advantage solar cannot replicate | Wind is the scalable renewable with momentum on its side |
+| **Battery risk-adjusted return** | Mean ~$18,000/MW/month at CV **~0.55–0.60** vs gas CV ~1.0–1.2 | Battery delivers competitive returns at the lowest revenue volatility of any technology in the dataset | Storage is considerably the efficient tier for the best return per unit of risk |
+| **Portfolio recommendation** | 60/40 wind–storage hybrid at ~**$17,000/MW/month**, CV ~0.55 | Pure storage sits on the efficient frontier but is too small-scale for institutional capital; the hybrid retains the edge at deployable scale | The investable version of the optimal portfolio for meaningful capital allocation |
 
 **Investment recommendation:** A 60/40 wind-storage hybrid portfolio sits on the efficient frontier with the deployable scale that institutional capital requires.
 
 ---
 
-## Reports
+### Reports
 
 Two report versions are available, calibrated to different audiences:
 
