@@ -12,17 +12,28 @@
 
 ### Overview
 
-South Australia operates the most renewable-penetrated grid in the National Electricity Market, with renewable share peaking above 80% on individual months and the state targeting 100% net renewable by 2027. This analysis examines how that transition has reshaped the economics of generation across five technologies: **diesel, natural gas, wind, solar, and battery storage** with a specific focus on the dispatch-weighted prices each technology actually captures.
+South Australia operates the most renewable-penetrated grid in the National Electricity Market, with renewable share peaking above 80% on individual months and the state targeting 100% net renewable by 2027. This analysis go through across five technologies: **diesel, natural gas, wind, solar, and battery storage** with a specific focus on the dispatch-weighted prices each technology actually captures.
 
-### Case study question
+---
 
-South Australia runs on renewable energy more than almost anywhere else in the world, especially wind and solar covering over 100% of the state's electricity demand. But it's turned out that generating green electricity and actually making money from it are two very different things. When every solar farm switches on at noon and every wind turbine spins up overnight, prices don't rise to meet them, they collapse as a result. The market is flooded, and the very abundance that makes South Australia a renewable success story is the same force quietly squeezing generator revenues.
+### The core problem 
 
-Therefore, the analysis is built around a single underlying question:
+South Australia runs on renewable energy more than almost anywhere else in the world, especially wind and solar covering over 100% of the state's electricity demand. But it's turned out that generating green electricity and actually making money from it are two very different things:
 
-> *Where should new capital be deployed in the SA generation market, and which technologies offer the strongest risk-adjusted returns over a 10–15 year investment horizon?*
+- When every solar farm switches on at noon and every wind turbine spins up overnight, prices don't rise to meet them, they collapse.
+- The market is witnessing electricity oversupply, and the very renewable resource abundance that makes South Australia **a renewable success story** is the same force quietly squeezing generator revenues.
+
+Therefore, the report is built around a single underlying question that matter:
+
+> *Which generation technology produces returns, not just electricity on its own ?*
+
+---
+
+### Dataset
 
 The dataset comprises 5-minute resolution spot prices and dispatch volumes for **15 generators** (3 each across the five technologies) over a **two-year window**, totalling approximately 3.1 million observations.
+
+---
 
 ### What I did
 - Built a dispatch-weighted price (capture price) model and capture factor metric to compare actual generator revenue against time-weighted market averages
@@ -34,16 +45,29 @@ The dataset comprises 5-minute resolution spot prices and dispatch volumes for *
 
 ### Key Findings
 
-| Area | Key Metric | Insight | Takeaway |
-|------|-----------|---------|----------|
-| **Capture price spread** | $25/MWh (solar) → $430/MWh (diesel): ~aprox a **17× range** | Technology selection is the single dominant revenue driver in SA, prevent any operational from improvement | Pick the wrong technology at once and no amount of execution fixes it |
-| **Hourly price mechanics** | Midday avg ~$0/MWh vs 6pm avg ~$240/MWh: a **240:1 daily swing** | Solar dispatches at peak supply and minimum price, every day, not by bad luck by its chance | No human-being fix exists within solar itself (natural resources); only co-located storage or firm contracts resolve it |
-| **Solar structural decline** | Capture factor trending at **−0.026/year** | A project capturing 60% of market average today captures only ~20% by 2040 if the trend holds | Standalone merchant solar is not investable in SA on a 14-year project horizon |
-| **Wind rising resilience** | Capture factor trending at **+0.106/year**, exceeding market average in late 2023 | Wind generates into evening and overnight windows when prices are highest, something structural advantage solar cannot replicate | Wind is the scalable renewable with momentum on its side |
-| **Battery risk-adjusted return** | Mean ~$18,000/MW/month at CV **~0.55–0.60** vs gas CV ~1.0–1.2 | Battery delivers competitive returns at the lowest revenue volatility of any technology in the dataset | Storage is considerably the efficient tier for the best return per unit of risk |
-| **Portfolio recommendation** | 60/40 wind–storage hybrid at ~**$17,000/MW/month**, CV ~0.55 | Pure storage sits on the efficient frontier but is too small-scale for institutional capital; the hybrid retains the edge at deployable scale | The investable version of the optimal portfolio for meaningful capital allocation |
+| Area | Key metric | Insight | Takeaway |
+|---|---|---|---|
+| **Capture price spread** | $25/MWh (solar) → $430/MWh (diesel) — **17× range** | Technology selection is the single dominant revenue driver — bigger than any operational lever | Pick the wrong technology and no amount of execution fixes it |
+| **Hourly price mechanics** | Midday ~$0/MWh vs 6pm ~$240/MWh — **240:1 daily swing** | Solar dispatches at peak supply and minimum price, every day, by physics — not bad luck | No operational fix exists within solar itself; only co-located storage or firm contracts resolve it |
+| **Solar structural decline** | Capture factor trending at **−0.026/year** | A project capturing 60% of market average today captures only ~20% by 2040 if the trend holds | Standalone merchant solar is not investable in SA on a 15-year horizon |
+| **Wind rising resilience** | Capture factor trending at **+0.106/year**, exceeding market average in late 2023 | Wind generates into evening and overnight windows when prices are highest — an advantage solar cannot replicate | Wind is the scalable renewable with momentum on its side |
+| **Battery risk-adjusted return** | ~$18,000/MW/month at CV **~0.55–0.60** vs gas CV ~1.0–1.2 | Competitive returns at the lowest revenue volatility of any technology in the dataset | Storage is the efficient frontier — best return per unit of risk |
+| **Portfolio optimum** | 60/40 wind–storage at ~**$17,000/MW/month**, CV ~0.55 | Pure storage sits on the efficient frontier but is too small-scale for institutional capital | The investable version of the optimal portfolio for meaningful capital allocation |
 
 **Investment recommendation:** A 60/40 wind-storage hybrid portfolio sits on the efficient frontier with the deployable scale that institutional capital requires.
+
+---
+## Recommendation Summary & Expected Impact
+
+> Forward validation draws on AEMO QED Q2 2026, Modo Energy, Aurora Energy
+> Research, and SA FERM Tender 1 results (May 2026).
+
+| Recommendation | What the market did | Revised position |
+|---|---|---|
+| **Battery storage deploy aggressively within 24–36 months** | Arbitrage spreads collapsed 85% YoY ($342 → $51/MWh). Net NEM battery revenue fell 56%. Grid-scale fleet passed 9,000MW. SA FERM Tender 1 awarded 517MW / 4,136MWh of contracted capacity | **Contracted exposure only**.|
+|  **Wind is build for deployable scale** | Wind supplies 44.5% of SA electricity (2024–25). AEMO 2026 ISP targets 26GW nationally by 2030. Capital costs stabilising (CSIRO: −5% projected 2025–26).| **Maintain and accelerate** |
+|  **Avoid standalone merchant solar** | Curtailment reached 25% for some assets. Rooftop PV overtook gas as SA's second-largest source (22.4%).| **Avoid — case strengthened.**|
+| **Gas is tactical, exit-defined position** |  Gas share declined to 20.8%. Gas prices fell 9–17% YoY. Eraring Power Station extended to **April 2029** (from 2027); AEMO cited insufficient replacement capacity and slow renewables build-out | **Model April 2029 as the revised exit window.** |
 
 ---
 
@@ -92,8 +116,6 @@ Battery revenue is calculated as **net revenue** (discharge revenue minus chargi
 
 Battery capacity factor and DWP are presented separately from energy-driven generators where methodologically appropriate, reflecting the structural difference between arbitrage-driven and energy-production-driven revenue.
 
-
----
 
 ---
 
