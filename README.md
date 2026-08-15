@@ -43,11 +43,11 @@ And go along with me through the project, we're trying to figure out the answers
 
 | Area | Key metric | Insight | Takeaway |
 |---|---|---|---|
-| **Capture price spread** | $25/MWh (solar) → $430/MWh (diesel) — **17× range** | Technology selection is the single dominant revenue driver — bigger than any operational lever | Pick the wrong technology and no amount of execution fixes it |
-| **Hourly price mechanics** | Midday ~$0/MWh vs 6pm ~$240/MWh — **240:1 daily swing** | Solar dispatches at peak supply and minimum price, every day, by physics — not bad luck | No operational fix exists within solar itself; only co-located storage or firm contracts resolve it |
-| **Solar structural decline** | Capture factor trending at **−0.026/year** | A project capturing 60% of market average today captures only ~20% by 2040 if the trend holds | Standalone merchant solar is not investable in SA on a 15-year horizon |
-| **Wind rising resilience** | Capture factor trending at **+0.106/year**, exceeding market average in late 2023 | Wind generates into evening and overnight windows when prices are highest — an advantage solar cannot replicate | Wind is the scalable renewable with momentum on its side |
-| **Battery risk-adjusted return** | ~$18,000/MW/month at CV **~0.55–0.60** vs gas CV ~1.0–1.2 | Competitive returns at the lowest revenue volatility of any technology in the dataset | Storage is the efficient frontier — best return per unit of risk |
+| **Capture price spread** | $25/MWh (solar) → $430/MWh (diesel): ~aprox. **17× range** | Technology selection is the single dominant revenue driver | Pick the wrong technology and no amount of execution fixes it |
+| **Hourly price mechanics** | Midday ~$0/MWh vs 6pm ~$240/MWh ~ **240:1 daily swing** | Solar dispatches at peak supply and minimum price, every day, by physics it's not bad luck | No operational fix exists within solar itself; only co-located storage or firm contracts resolve it |
+| **Solar structural decline** | Capture factor trending at **-0.026/year** | A project capturing 60% of market average today captures only ~20% by 2040 if the trend holds | Standalone merchant solar is not investable in SA on a 15-year horizon |
+| **Wind rising resilience** | Capture factor trending at **+0.106/year**, exceeding market average in late 2023 | Wind generates into evening and overnight windows when prices are highest | Wind is the scalable renewable with momentum on its side |
+| **Battery risk-adjusted return** | ~$18,000/MW/month at CV **~0.55–0.60** vs gas CV ~1.0–1.2 | Competitive returns at the lowest revenue volatility of any technology in the dataset | Storage is the best return per unit of risk |
 | **Portfolio optimum** | 60/40 wind–storage at ~**$17,000/MW/month**, CV ~0.55 | Pure storage sits on the efficient frontier but is too small-scale for institutional capital | The investable version of the optimal portfolio for meaningful capital allocation |
 
 **Investment recommendation:** A 60/40 wind-storage hybrid portfolio sits on the efficient frontier with the deployable scale that institutional capital requires.
