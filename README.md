@@ -25,7 +25,9 @@ South Australia runs on renewable energy more than almost anywhere else in the w
 
 Therefore, the report is built around a single underlying question that matter:
 
-> *Which generation technology produces returns, not just electricity on its own ?*
+> **Which generation technology produces returns, not just electricity on its own ?**
+
+And go along with me through the project, we're trying to figure out the answers for the question why renewable investore are quietly losing sleep. 
 
 ---
 
