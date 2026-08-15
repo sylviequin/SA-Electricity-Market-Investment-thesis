@@ -29,12 +29,6 @@ Therefore, the report is built around a single underlying question that matter:
 
 ---
 
-### Dataset
-
-The dataset comprises 5-minute resolution spot prices and dispatch volumes for **15 generators** (3 each across the five technologies) over a **two-year window**, totalling approximately 3.1 million observations.
-
----
-
 ### What I did
 - Built a dispatch-weighted price (capture price) model and capture factor metric to compare actual generator revenue against time-weighted market averages
 - Modeled battery storage revenue using a rule-based arbitrage strategy (charge on the cheapest 12 intervals/day, discharge on the most expensive, 0.85 round-trip efficiency)
