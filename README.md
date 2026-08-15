@@ -62,7 +62,7 @@ And go along with me through the project, we're trying to figure out the answers
 |---|---|---|
 | **Battery storage deploy aggressively within 24–36 months** | Arbitrage spreads collapsed 85% YoY ($342 → $51/MWh). Net NEM battery revenue fell 56%. Grid-scale fleet passed 9,000MW. SA FERM Tender 1 awarded 517MW / 4,136MWh of contracted capacity | **Contracted exposure only**.|
 |  **Wind is build for deployable scale** | Wind supplies 44.5% of SA electricity (2024–25). AEMO 2026 ISP targets 26GW nationally by 2030. Capital costs stabilising (CSIRO: −5% projected 2025–26).| **Maintain and accelerate** |
-|  **Avoid standalone merchant solar** | Curtailment reached 25% for some assets. Rooftop PV overtook gas as SA's second-largest source (22.4%).| **Avoid — case strengthened.**|
+|  **Avoid standalone merchant solar** | Curtailment reached 25% for some assets. Rooftop PV overtook gas as SA's second-largest source (22.4%).| **Avoid case strengthened.**|
 | **Gas is tactical, exit-defined position** |  Gas share declined to 20.8%. Gas prices fell 9–17% YoY. Eraring Power Station extended to **April 2029** (from 2027); AEMO cited insufficient replacement capacity and slow renewables build-out | **Model April 2029 as the revised exit window.** |
 
 ---
